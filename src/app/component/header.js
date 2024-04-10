@@ -6,34 +6,11 @@ import clsx from "clsx";
 const Header = () => {
   const [isNavbarExpended, setIsNavbarExpended] = useState(false)
   return (
-    // <header className=" text-black py-2 px-1 my-3 mx-5 items-center">
-    //   <div className=" h-10 flex justify-between  items-center content-center text-xl mx-auto">
-    //     <div>
-    //       <Image
-    //         className=" "
-    //         src="/cale.png"
-    //         alt="tag"
-    //         width={250}
-    //         height={250}
-    //       />
-    //     </div>
-    //     <div>
-    //       <ul className="flex flex-col  font-bold text-center content-center justify-center pr-5 mr-5">
-    //         <li className="font-questrial">Individuals</li>
-    //         <li className="font-questrial ">Teams</li>
-    //         <li className="font-questrial">Enterprise</li>
-    //         <li className="font-questrial">Products</li>
-    //         <li className="font-questrial">Pricing</li>
-    //         <li className="font-questrial">Resources</li>
-    //       </ul>
-    //       
-    //     </div>
-    //   </div>
- // </header>
+   
  
 
 <nav className="bg-white border-gray-200 dark:bg-gray-900">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/cale.png" className="h-20" alt="Flowbite Logo" />
        
@@ -44,8 +21,8 @@ const Header = () => {
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
-    <div  class={clsx(" gap-x-10 gap-y-5 w-full  sm:items-center flex flex-col sm:flex-row md:w-auto",!isNavbarExpended && "hidden sm:flex")} id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+    <div  class={clsx(" gap-x-10  gap-y-5 w-full  sm:items-center flex flex-col md:flex-row md:w-auto",!isNavbarExpended && "hidden md:flex")} id="navbar-default">
+      <ul class="font-medium  flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
           <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Individuals</a>
         </li>
